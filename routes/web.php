@@ -10,10 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//Main
 Route::get('/', 'MainController@index');
 Route::get('/403', 'MainController@Forbidden');
-
+//Change Pass
+Route::get('change-password', function() {return view('auth.change-password'); });
+Route::post('change-password', 'Auth\UpdatePasswordController@update');
 
 Route::get('/redirect', 'SocialAuthController@redirect');
 Route::get('/callback', 'SocialAuthController@callback');
