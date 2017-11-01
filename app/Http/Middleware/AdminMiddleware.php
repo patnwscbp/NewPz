@@ -16,6 +16,6 @@ class AdminMiddleware
         {
             return $next($request);
         }
-        return redirect()->guest('/403');
+        return redirect()->guest('/forbidden');
     }
 }

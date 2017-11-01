@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "tsn black";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-Black.ttf");
+}
+@font-face {
+  font-family: "tsn black-ltalic";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-BlackItalic.ttf");
+}
+@font-face {
+  font-family: "tsn bold";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-Bold.ttf");
+}
+@font-face {
+  font-family: "tsn bold-ltalic";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "tsn extra-bold";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "tsn extra-bold-ltalic";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-ExtraBoldItali.ttf");
+}
+@font-face {
+  font-family: "tsn extra-light";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "tsn extra-light-ltalic";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-ExtraLightItal.ttf");
+}
+@font-face {
+  font-family: "tsn ltalic";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-Italic.ttf");
+}
+@font-face {
+  font-family: "tsn light";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-Light.ttf");
+}
+@font-face {
+  font-family: "tsn light-ltalic";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-LightItalic.ttf");
+}
+@font-face {
+  font-family: "tsn regular";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "tsn semibold";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-SemiBold.ttf");
+}
+@font-face {
+  font-family: "tsn semibold-ltalic";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-SemiBoldItalic.ttf");
+}
+@font-face {
+  font-family: "tsn ultra-bold";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-UltraBold.ttf");
+}
+@font-face {
+  font-family: "tsn ultra-bold-ltalic";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-UltraBoldItali.ttf");
+}
+@font-face {
+  font-family: "tsn ultra-light";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-UltraLight.ttf");
+}
+@font-face {
+  font-family: "tsn ultra-light-ltalic";
+  src: url("../fonts/thaisans-neue/ThaiSansNeue-UltraLightItal.ttf");
+}

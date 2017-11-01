@@ -12,7 +12,7 @@
 */
 //Main
 Route::get('/', 'MainController@index');
-Route::get('/403', 'MainController@Forbidden');
+Route::get('/forbidden', 'MainController@Forbidden');
 //Change Pass
 Route::get('change-password', function() {return view('auth.change-password'); });
 Route::post('change-password', 'Auth\UpdatePasswordController@update');
