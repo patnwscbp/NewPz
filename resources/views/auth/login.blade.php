@@ -1,70 +1,61 @@
-@extends('layouts.app')
+@extends('layouts.logincss')
 
 @section('content')
+<div id="demo-content">
+
+
+        <div id="loader-wrapper">
+			<div id="loader"></div>
+            
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+		  </div>     
 <div class="container">
+       
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
-
-                <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
-                                <a href="redirect" class="btn btn-primary">Login Facrbook</a>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a>
-                            </div>
-                        </div>
-                    </form>
+          <div class="content">
+              <img src="{{ asset('img/pz.png') }}" width="300px" >
+                <div class="title m-b-md">
+                   Customer Service
                 </div>
-            </div>
+
+        </div>    
+          <div id="login">
+
+        <form  method="POST" action="{{ route('login') }}">
+                        {{ csrf_field() }}
+            <p>
+                <span class="fa fa-envelope-o"></span>
+                <input  type="email"  name="email" value="{{ old('email') }}" placeholder="E-mail" required >
+            </p>
+            <p><span class="fa fa-lock"></span>
+                <input id="password" type="password" class="form-control" name="password" placeholder="Password" required>
+            </p>
+             <p>
+                @if ($errors->has('email'))
+             <p class="help-block">
+                     <strong>{{ $errors->first('email') }}</strong>
+                   
+                @endif
+                @if ($errors->has('password'))
+            <p class="help-block">
+                    <strong>{{ $errors->first('password') }}</strong>
+                @endif 
+              </p> 
+            <p>
+                <input type="submit" value="Sign In">
+                <a href="redirect" class="btn btn-primary">Login Facrbook</a>
+                <a class="btn btn-link" href="{{ route('password.request') }}">
+                    Forgot Your Password? </a>
+              </p>
+
+        </form>
+
+        <p>Not a member? <a href="{{ route('register') }}">Sign up now</a><span class="fontawesome-arrow-right"></span></p>
+
+      </div>
+      
         </div>
-    </div>
-</div>
+    </div>    
 @endsection

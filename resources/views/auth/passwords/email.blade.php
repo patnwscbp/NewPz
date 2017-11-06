@@ -1,6 +1,45 @@
-@extends('layouts.app')
+@extends('layouts.logincss')
 
 @section('content')
+<div class="container">  
+    <div class="row">
+          <div class="content">
+              <img src="{{ asset('img/pz.png') }}" width="300px" >
+                <div class="title m-b-md">
+                   Reset Password
+                </div>
+
+        </div>    
+          <div id="login">
+
+        <form class="form-horizontal" method="POST" action="{{ route('password.email') }}">
+                        {{ csrf_field() }}
+
+          <fieldset class="clearfix">
+
+            <p>
+                <span class="fontawesome-envelope"></span>
+                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="E-Mail" required>
+                     @if ($errors->has('email'))
+                        <p class="help-block">
+                                <strong>{{ $errors->first('email') }}</strong>
+                                 
+                    @endif
+              </p> 
+            <p>
+               <button type="submit" class="btn btn-primary">ส่งอีเมลล์เพื่อนรีเซ็ตรหัสผ่าน</button>
+              </p>
+
+          </fieldset>
+
+        </form>
+
+        
+
+      </div>
+      
+        </div>
+<!--
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -43,5 +82,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 @endsection

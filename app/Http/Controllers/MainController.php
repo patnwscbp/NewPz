@@ -18,7 +18,7 @@ class MainController extends Controller
     }
     public function Forbidden()
     {
-        return view('403');
+        return view('permission.403');
     }
 
 }
