@@ -22,8 +22,8 @@ Route::get('/callback', 'SocialAuthController@callback');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('/clients/home', 'HomeController@index')->name('home');
+Route::get('/clients/dedicated', 'HomeController@dedicated');
 
 Route::group(['middleware' => ['auth', 'admin']], function ()
   {
